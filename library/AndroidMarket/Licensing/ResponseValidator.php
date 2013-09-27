@@ -70,7 +70,7 @@ class AndroidMarket_Licensing_ResponseValidator {
         }
 
         //check package name is valid
-        if (!empty($packageName) && $packageName !== $response->getPackageName()) {
+        if (!empty($this->_packageName) && $this->_packageName !== $response->getPackageName()) {
             return false;
         }
 
